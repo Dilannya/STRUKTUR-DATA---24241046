@@ -8,7 +8,7 @@ def show_data():
     else:
         for indeks in range(len(buku)):
             print("[%d] %s" % (indeks, buku[indeks]))
-            
+
 def insert_data():
     buku_baru = input("Judul Buku : ")
     buku.append(buku_baru)
@@ -21,7 +21,7 @@ def edit_data():
     else:
         judul_baru = input("Judul Baru : ")
         buku[indeks] = judul_baru
-        
+
 def delete_data():
     show_data()
     indeks = int(input("Inputkan ID Buku : "))
@@ -54,7 +54,7 @@ def show_menu():
         exit()
     else:
         print("Pilihan Anda Salah!")
-        
-qif __name__ == "__main__":
+
+if __name__ == "__main__":
     while(True):
         show_menu()
